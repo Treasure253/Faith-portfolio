@@ -128,10 +128,11 @@ body {
 
 .icons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  margin: 10px 0;
-  flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 10px;
 }
 
 .icon {
@@ -139,7 +140,8 @@ body {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  width: 80px;
   transition: transform 0.3s ease;
 }
 
@@ -148,17 +150,41 @@ body {
   margin-bottom: 5px;
 }
 
-/* Colors per platform */
+
+.icon span {
+  font-size: 0.8rem;
+  color: #fff;
+  text-align: center;
+  word-break: break-word;
+}
+
+
+.icon.email { color: #dd4b39; }
+.icon.github { color: #ccc; }
+.icon.linkedin { color: #0077b5; }
+
+
+.icon:active {
+  transform: scale(0.95);
+}
+
+
+.icon i {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+
 .icon.email {
-  color: #dd4b39; /* red-like */
+  color: #dd4b39; 
 }
 
 .icon.github {
-  color: #ccc; /* GitHub gray */
+  color: #ccc; 
 }
 
 .icon.linkedin {
-  color: #0077b5; /* LinkedIn blue */
+  color: #0077b5;
 }
 
 .icon span {
